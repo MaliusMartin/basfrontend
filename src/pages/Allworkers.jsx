@@ -13,6 +13,7 @@ const Allworkers = () => {
     // Fetch worker data from Django API endpoint
     api.get(`/employee/`)
       .then(response => {
+        console.log(response)
         setWorkers(response.data);
       })
       .catch(error => {
